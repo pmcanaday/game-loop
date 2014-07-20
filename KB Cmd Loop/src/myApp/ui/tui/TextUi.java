@@ -38,6 +38,11 @@ public class TextUi {
                 
                 break;
                 
+            case "LRSCAN":
+                System.out.println("Sir, we are blind");
+                
+                break;
+                
             case "QUIT":
                 processing = false;
                 
