@@ -8,12 +8,12 @@ package myApp.ui.tui;
  * standards.
  * 
  * Any of the open source CLIs out there could be used. Here we use 
- * jopt-simple from https://pholser.github.io/jopt-simple/.
+ * jopt-simple from https://pholser.github.io/jopt-simple/ (4.8).
  * 
  * The basic idea is for the controller to get command strings from the 
  * console then give them to the interpreter, which checks for errors and,
  * if valid, passes back some command object that contains all of the
- * validate information; otherwise an error message is returned.
+ * validated information; otherwise an error message is returned.
  * 
  * Don't be fooled. This is not the classic command design pattern in
  * which command objects know to execute themselves. Nor is it a 
