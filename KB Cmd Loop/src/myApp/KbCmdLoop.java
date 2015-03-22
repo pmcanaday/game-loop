@@ -1,5 +1,6 @@
 package myApp;
 
+import myApp.ui.tui.CommandCliParser;
 import myApp.ui.tui.TextUi;
 
 /**
@@ -14,7 +15,12 @@ public class KbCmdLoop {
 
     public static void main(String[] args) {
         
-        TextUi ui = new TextUi();
-        ui.doCommands();
+        // Lesson 1 - most simple
+        //TextUi ui = new TextUi();
+        //ui.doCommands();
+        
+        // Lesson 2 - the annoyingly crude CLI
+        CommandCliParser cliParser = new CommandCliParser();
+        cliParser.parseCommand("--verbose");
     }
 }
